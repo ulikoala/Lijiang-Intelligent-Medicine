@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.api.dao.MacPosDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.api.entity.MacPosEntity" id="macposMap">
+        <result property="machineNo" column="machineNo"/>
+        <result property="drugBatchNo" column="drugBatchNo"/>
+        <result property="maxNumber" column="maxNumber"/>
+        <result property="nowNumber" column="nowNumber"/>
+        <result property="positionCode" column="positionCode"/>
+        <result property="positionState" column="positionState"/>
+        <result property="machineShortName" column="machineShortName"/>
+    </resultMap>
+
+
+</mapper>

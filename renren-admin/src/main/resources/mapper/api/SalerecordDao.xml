@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.api.dao.SaleRecordDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.api.entity.SaleRecordEntity" id="salerecordMap">
+        <result property="orderNo" column="orderNo"/>
+        <result property="orderState" column="orderState"/>
+        <result property="outDrugTime" column="outDrugTime"/>
+        <result property="payType" column="payType"/>
+        <result property="shouldOutCount" column="shouldOutCount"/>
+        <result property="realOutCount" column="realOutCount"/>
+        <result property="outDrugPrice" column="outDrugPrice"/>
+        <result property="outDrugAllPrice" column="outDrugAllPrice"/>
+        <result property="drugName" column="drugName"/>
+        <result property="drugBatch" column="drugBatch"/>
+        <result property="drugNo" column="drugNo"/>
+        <result property="drugBatchNo" column="drugBatchNo"/>
+        <result property="outDrugResult" column="outDrugResult"/>
+        <result property="machineShortName" column="machineShortName"/>
+        <result property="clientName" column="clientName"/>
+        <result property="positionCode" column="positionCode"/>
+    </resultMap>
+
+
+</mapper>

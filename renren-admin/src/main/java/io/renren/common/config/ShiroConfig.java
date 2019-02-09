@@ -92,12 +92,16 @@ public class ShiroConfig {
         filterMap.put("/webjars/**", "anon");
         filterMap.put("/swagger-resources/**", "anon");
 
+        //添加api接口不过滤
+        filterMap.put("/api/**", "anon");
+
         filterMap.put("/statics/**", "anon");
         filterMap.put("/login.html", "anon");
         filterMap.put("/sys/login", "anon");
         filterMap.put("/favicon.ico", "anon");
         filterMap.put("/captcha.jpg", "anon");
         filterMap.put("/**", "authc");
+
         shiroFilter.setFilterChainDefinitionMap(filterMap);
 
         return shiroFilter;

@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 
 @SpringBootApplication
-@MapperScan(basePackages = {"io.renren.dao"})
+@MapperScan(basePackages = {"io.renren.mappertest"})
 public class ApiApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
